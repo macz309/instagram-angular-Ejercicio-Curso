@@ -1,0 +1,226 @@
+/* ESTILOS GENERALES */
+*{
+    font-family: 'Nunito', sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    padding-top: 9em;
+}
+button:focus, input:focus {
+    outline: 0;
+}
+
+button{
+    cursor: pointer;
+}
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+
+.txt-gray {
+    color: #8c8c8c;
+}
+
+.text-small {
+    font-size: 13px;
+}
+.text-bold{
+    font-weight: bold;
+}
+/* FIN ESTILOS GENERALES */
+
+/* ESTILOS HEADER */
+.header{
+    padding: 10px;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #f1ecec;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    text-align: center;
+}
+
+.menu-icons{
+    display: flex;
+}
+.menu-icons li a i {
+    margin: 0 15px;
+    font-size: 23px;
+    color: black;
+}
+
+.brand-img{
+    width: 185px;
+}
+/* FIN ESTILOS HEADER */
+
+/* ESTILOS PULBICACION */
+
+.publishment{
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 2em;
+}
+
+.content{
+    float: left;
+    margin-right: 28px;
+    max-width: 614px;
+    width: 100%;
+}
+
+.header-publishment{
+    position: relative;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu-options{
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+}
+
+.user-photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.content-publishment{
+    width: 100%;
+}
+.img-publishment{
+    width: 100%;
+}
+
+.publisment-options{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.publisment-options  i{
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.save-photo-icon{
+    position: absolute;
+    right: 0;
+}
+.button-see-more{
+    background: transparent;
+    border: none;
+    color: gray;
+}
+.publish-comment{
+    display: flex;
+    font-weight: bold;
+    border-top: 1px solid #f1ecec;
+}
+
+.footer-publishment{
+    padding: 0 10px;
+    
+}
+
+.publish-comment button {
+    width: 30%;
+    border: none;
+    height: 50px;
+    background: transparent;
+    color: #598b96;
+}
+.publish-comment input {
+    width: 70%;
+    border: none;
+    text-indent: 10px;
+    height: 50px;
+    background: transparent;
+}
+
+.stories {
+    float: right;
+    width: 308px;
+}
+
+/* FIN ESTILOS PULBICACION */
+
+/*  STORIES START */
+
+.content-suggestion{
+    margin-top: 1.5em;
+}
+.header-stories {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.user-photo-storie {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.user-info p {
+    margin: 2px 0;
+}
+
+.content-suggestion-list{
+    border: 1px solid #ececec;
+    padding: 10px 10px;
+}
+
+.header-suggestions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.card-suggestion{
+    padding: 10px;
+    
+}
+
+.users-suggestion {
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.user-suggestion {
+    display: flex;
+    align-items: center;
+}
+
+.follow-user-btn{
+    border: none;
+    background: transparent;
+    color: #3897f0;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*  END STORIES */
