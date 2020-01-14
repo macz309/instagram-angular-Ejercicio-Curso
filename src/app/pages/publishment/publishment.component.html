@@ -1,0 +1,121 @@
+<!-- SECTION BODY -->
+<section class="section-body">
+    <div class="container content-body">
+        <div class="content">
+            <!-- Es CARD -->
+            <div class="publishment">
+                <div class="header-publishment">
+                    <img class="user-photo" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+                    <a routerLink="perfil" ><p><strong>Mario</strong></p></a>
+                    
+                    <div class="menu-options">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="content-publishment">
+                    <img class="img-publishment" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                </div>
+                <div class="footer-publishment">
+
+                    <div class="publisment-options">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment-dots"></i>
+                        <i class="far fa-paper-plane"></i>
+                        <div class="save-photo-icon">
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="publishmet-info">
+                        <p><strong>7 Megustas</strong></p>
+                        <p> <strong>Mario</strong>
+                            Lorem ipsum dolor sit, amet consectetur
+                        </p>
+                    </div>
+
+                    <div class="publishment-comments">
+                        <button (click)="toggleComments()" class="button-see-more">Ver los n Comentarios</button>
+                        <div *ngIf="showComments" class="" >
+                            <p *ngFor="let comment of comments"> <strong>{{comment.name}}</strong>
+                                {{comment.comment}}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publish-comment">
+                        <input [(ngModel)]="comment.comment" name="input" type="text" placeholder="Añade un comentario">
+                        <button (click)="addComment()">Publicar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN CARD -->
+        </div>
+
+        <div class="stories">
+            <div class="header-stories">
+                <img class="user-photo-storie" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+                <div class="user-info">
+                    <p><strong>mario_eoc</strong></p>
+                    <p class="txt-gray text-small">Mario Alberto</p>
+                </div>
+            </div>
+            <div class="content-suggestion">
+                <div class="content-suggestion-list">
+                    <div class="header-suggestions">
+                        <p class="txt-gray text-bold">Sugerencias para ti</p>
+                        <p class="text-bold">Ver todas</p>
+                    </div>
+                    <div class="users-suggestion">
+                        <div class="user-suggestion">
+                            <img class="user-photo-storie" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+                            <div class="user-info">
+                                <p><strong>mario_eoc</strong></p>
+                                <p class="txt-gray text-small">Mario Alberto</p>
+                            </div>
+                        </div>
+                        <div class="follow-user">
+                            <button class="follow-user-btn">Seguir</button>
+                        </div>
+                    </div>
+                    <div class="users-suggestion">
+                        <div class="user-suggestion">
+                            <img class="user-photo-storie" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+                            <div class="user-info">
+                                <p><strong>mario_eoc</strong></p>
+                                <p class="txt-gray text-small">Mario Alberto</p>
+                            </div>
+                        </div>
+                        <div class="follow-user">
+                            <button class="follow-user-btn">Seguir</button>
+                        </div>
+                    </div>
+                    <div class="users-suggestion">
+                        <div class="user-suggestion">
+                            <img class="user-photo-storie" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+                            <div class="user-info">
+                                <p><strong>mario_eoc</strong></p>
+                                <p class="txt-gray text-small">Mario Alberto</p>
+                            </div>
+                        </div>
+                        <div class="follow-user">
+                            <button class="follow-user-btn">Seguir</button>
+                        </div>
+                    </div>
+                    <div class="users-suggestion">
+                        <div class="user-suggestion">
+                            <img class="user-photo-storie" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+                            <div class="user-info">
+                                <p><strong>mario_eoc</strong></p>
+                                <p class="txt-gray text-small">Mario Alberto</p>
+                            </div>
+                        </div>
+                        <div class="follow-user">
+                            <button class="follow-user-btn">Seguir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- EDN SECTION BODY -->

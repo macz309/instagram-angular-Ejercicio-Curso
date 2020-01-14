@@ -1,0 +1,81 @@
+.border-content{
+    background-color: #fff;
+    background-color: rgba(var(--cdc,255,255,255),1);
+    border: 1px solid #dbdbdb;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    margin: 60px auto 0;
+    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    
+}
+.user-photo-edit{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 3em;
+}
+.menu-edit-profile{
+    padding: 2em 0;
+    width: 300px;
+    text-align: center;
+    border-right: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+.btn-change-image{
+    color:#3897f0 ;
+    font-weight: bold;
+    font-size: 13px;
+}
+.edit-profile-form{
+    margin-left: 6em;
+    padding: 4em 0;
+}
+.menu-edit-profile nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menu-edit-profile nav ul li{
+    border-left: 1px solid black;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.header-edit-profile-form{
+    display: flex;
+    align-items: center;
+    /* justify-content: center */
+    
+}
+.header-edit-profile-form .user-name-option p {
+    margin: 0;
+}
+
+.form-edit{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.5em 0;
+}
+
+.form-edit label {
+    width: 100px;
+    font-weight: bold;
+}
+.form-edit input, textarea {
+    width: 300px;
+    height: 2em;
+    border-radius: 3px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1); ;
+}
+
+.save-data {
+    border: 1px solid transparent;
+    background-color: #3897f0;
+    border-radius: 4px;
+    color: #fff;
+    margin: auto;
+    display: block;
+    padding: 5px 10px;
+}

@@ -1,0 +1,50 @@
+.header-profile{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.user-circle-profile{
+    width: 300px;
+}
+.user-profile-head{
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+}
+.header-profile-section{
+    margin-bottom: 3em;
+}
+.profile-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+.img-post{
+    width: 100%;
+}
+.profile-header p {
+    margin: 0 1em;
+}
+.btn-edit{
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+  }
