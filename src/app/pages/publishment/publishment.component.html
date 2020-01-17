@@ -3,10 +3,10 @@
     <div class="container content-body">
         <div class="content">
             <!-- Es CARD -->
-            <div class="publishment">
+            <div class="publishment" *ngFor="let item of publishment.publishments">
                 <div class="header-publishment">
                     <img class="user-photo" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
-                    <a routerLink="perfil" ><p><strong>Mario</strong></p></a>
+                    <a routerLink="perfil" ><p><strong>{{item.userName}}</strong></p></a>
                     
                     <div class="menu-options">
                         <i class="fas fa-ellipsis-h"></i>

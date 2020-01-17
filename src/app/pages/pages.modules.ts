@@ -1,3 +1,4 @@
+import { PublishmentService } from './service/publishment';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { EditComponent } from './edit/edit.component';
@@ -8,6 +9,8 @@ import { NgModule } from '@angular/core';
 import { PagesRoutingModule } from './pages-routing.module';
 import { CommonModule } from '@angular/common';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
 declarations:[
@@ -16,15 +19,16 @@ declarations:[
     EditComponent
 ],
 imports:[
+    BrowserModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserModule,
     CommonModule,
     RouterModule,
     PagesRoutingModule
 ],
 providers:[
-
+    PublishmentService
 ],
 bootstrap:[]
 })

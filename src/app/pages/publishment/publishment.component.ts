@@ -1,3 +1,4 @@
+import { PublishmentService } from '../service/publishment';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +10,7 @@ export class PublishmentComponent implements OnInit {
 
   public showComments = false;
 
-  public comments = [{
+  public comments = [/*{
       id: 1,
       name: "Juanito",
       comment:"Buena Foto :)"
@@ -23,24 +24,38 @@ export class PublishmentComponent implements OnInit {
       id: 3,
       name: "Paco",
       comment:"Me quede chato"
-    },
+    },*/
   ]
+
+  public publishment;
 
   public comment = {
     id: 0,
     name:"Anonimo",
     comment: "",
   }
-  constructor() { }
+  constructor( private publishmentService: PublishmentService ) {
 
+   }
   ngOnInit() {
+    this.getPublishment();
   }
 
   public toggleComments(){
     this.showComments=!this.showComments
   }
 
+  public getPublishment(){
+    this.publishmentService.getAllPublishments({userId: "5e207f405e1ac405f4159006"}).subscribe(
+      (response: any ) => { 
+        this.publishment = response;
+      }, (error => console.log(error))
+    )
+  }
+
+
   public addComment(){
+    /*
     let lastId= (this.comments[(this.comments.length)-1].id) + 1
     console.log(lastId)
     let newArray=this.comments
@@ -52,6 +67,6 @@ export class PublishmentComponent implements OnInit {
 
     this.comments=newArray
     console.log(this.comments)
-
+    */
   }
 }
